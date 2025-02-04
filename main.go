@@ -18,5 +18,8 @@ func main() {
 	r.POST("/signup", func(c *gin.Context) {
 		controllers.Signup(c)
 	})
+	r.POST("/login", func(c *gin.Context) {
+		controllers.Login(c)
+	})
 	r.Run()
 }
